@@ -12,39 +12,54 @@
         .container {
             height: 100vh;
             display: grid;
-            grid-template-rows: 100px 1fr 70px;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "sidebar main main main"
+                "footer footer footer footer"
+
         }
 
-        .item {
-            border: 1px solid red;
-        }
+        .item {}
 
         .item-a {
-            background-color: dimgrey;
+            grid-area: header;
+            background-color: darkgray;
+        }
+
+        .splash {
+            background-image: url(tema_07_splash.png);
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            height: 540px;
+            position: relative;
         }
 
         .item-b {
-            background-color: darkolivegreen;
-            width: 90vw;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 10px;
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-area: sidebar;
+
+            background-color: green;
         }
 
         .item-c {
-            background-color: darksalmon;
+            grid-area: main;
+            background-color: ghostwhite;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 0.5em;
+            margin: 10px;
+
         }
 
         .item-d {
-            background-color: cadetblue;
+            grid-area: footer;
+            background-color: orange;
         }
 
         article {
-            border: 1px solid black;
-            background-color: darkorange;
+            background-color: brown;
         }
 
         @media screen and (min-width:768px) {}
@@ -54,20 +69,42 @@
 
 <body>
     <main class="container">
-        <div class="item item-a">A</div>
-        <div class="item item-b">
-
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
-            <article>D</article>
+        <div class="item item-a">
+            <p>A</p>
+            <div class="splash"></div>
         </div>
-        <div class="item item-c">C</div>
-        <div class="item item-d">D</div>
+        <div class="item item-b">
+            <p>B</p>
+        </div>
+        <div class="item item-c">
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+            <article>
+                <p>C</p>
+            </article>
+        </div>
+        <div class="item item-d">
+            <p>D</p>
+        </div>
     </main>
 
 </body></html>
