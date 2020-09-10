@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Css Grid</title>
+
+
     <style>
         * {
             margin: 0;
@@ -24,27 +26,25 @@
 
         .item-a {
             grid-area: header;
-            background-color: darkgray;
+            background-color: #262240;
         }
 
         .splash {
             background-image: url(tema_07_splash.png);
             background-size: cover;
-            background-position: center top;
             width: 100%;
-            height: 540px;
+            height: 630px;
             position: relative;
         }
 
         .item-b {
             grid-area: sidebar;
-
-            background-color: green;
+            background-color: #A0D3F2;
         }
 
         .item-c {
             grid-area: main;
-            background-color: ghostwhite;
+            background-color: #F27B50;
 
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -55,11 +55,11 @@
 
         .item-d {
             grid-area: footer;
-            background-color: orange;
+            background-color: #F2EDDC;
         }
 
         article {
-            background-color: brown;
+            background-color: #F2C572;
         }
 
         @media screen and (min-width:768px) {}
