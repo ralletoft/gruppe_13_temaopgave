@@ -13,6 +13,21 @@
 
 <body>
 
+    <template>
+        <article class="cov">
+
+            <h2 class="kunstner"></h2>
+            <img class="billede" src="" alt="">
+            <p class="kategori"></p>
+            <p>Udgivelse: <span class="udgivelse"></span></p>
+            <p><span class="pladeselskab"></span></p>
+            <p><span class="beskrivelse"></span></p>
+            <p><span class="albumnavn"></span></p>
+
+
+        </article>
+    </template>
+
     <div class="splash"></div>
 
     <h1>ALLE</h1>
@@ -23,7 +38,6 @@
             <button class="filter" data-kategori="rock">ROCK</button>
             <button class="filter" data-kategori="pop">POP</button>
             <button class="filter" data-kategori="jazz">JAZZ</button>
-            <button class="filter" data-kategori="heavy">HEAVY</button>
             <button class="filter" data-kategori="hiphop">HIP HOP</button>
         </nav>
 
@@ -38,7 +52,7 @@
                 <img class="pop_billede" src="" alt="">
                 <div>
                     <p class="pop_kategori"></p>
-                    <p>Udgivelse: <span class="pop_år"></span></p>
+                    <p>Udgivelse: <span class="pop_udgivelse"></span></p>
                     <p>Pladeselskab: <span class="pop_pladeselskab"></span></p>
                     <p><span class="pop_beskrivelse"></span></p>
                     <p><span class="pop_albumnavn"></span></p>
@@ -51,40 +65,9 @@
 
         <div class="item item-b"></div>
 
-        <div class="item item-c">
+        <div class="item item-c"></div>
 
-
-
-            <template>
-
-                <article class="ret">
-
-                    <h2 class="kunstner"></h2>
-                    <img class="billede" src="" alt="">
-                    <p class="kategori"></p>
-                    <p>Udgivelse: <span class="år"></span></p>
-                    <p><span class="pladeselskab"></span></p>
-                    <p><span class="beskrivelse"></span></p>
-                    <p><span class="albumnavn"></span></p>
-
-
-                </article>
-
-            </template>
-
-            <article>2</article>
-            <article>3</article>
-            <article>4</article>
-            <article>5</article>
-            <article>6</article>
-            <article>7</article>
-            <article>8</article>
-
-        </div>
-
-        <div class="item item-d">
-
-        </div>
+        <div class="item item-d"></div>
     </main>
 
     <script src="script.js"></script>

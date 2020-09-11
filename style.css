@@ -64,4 +64,18 @@ article {
     display: none;
 }
 
+button {
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+    padding: 6px;
+    flex-basis: auto;
+    position: relative;
+    font-size: .8em;
+    border: none;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
 @media screen and (min-width:768px) {}
