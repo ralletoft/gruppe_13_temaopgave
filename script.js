@@ -20,13 +20,13 @@ function visCovers() {
     covers.feed.entry.forEach(cov => {
         if (filter == "alle" || filter == cov.gsx$kategori.$t) {
             const minKlon = templatePointer.cloneNode(true).content;
-            minKlon.querySelector(".kunstner").textContent = cov.gsx$kunstner.$t;
-            minKlon.querySelector(".albumnavn").textContent = cov.gsx$albumnavn.$t;
-            //            minKlon.querySelector(".udgivelse").textContent = cov.gsx$udgivelse.$t;
-            minKlon.querySelector(".pladeselskab").textContent = cov.gsx$pladeselskab.$t;
+            //minKlon.querySelector(".kunstner").textContent = cov.gsx$kunstner.$t;
+            //minKlon.querySelector(".albumnavn").textContent = cov.gsx$albumnavn.$t;
+            //minKlon.querySelector(".udgivelse").textContent = cov.gsx$udgivelse.$t;
+            //minKlon.querySelector(".pladeselskab").textContent = cov.gsx$pladeselskab.$t;
             //minKlon.querySelector(".").textContent = cov.gsx$lang.$t;
-            minKlon.querySelector(".kategori").textContent = cov.gsx$kategori.$t;
-            minKlon.querySelector(".beskrivelse").textContent = cov.gsx$beskrivelse.$t;
+            //minKlon.querySelector(".kategori").textContent = cov.gsx$kategori.$t;
+            //minKlon.querySelector(".beskrivelse").textContent = cov.gsx$beskrivelse.$t;
             minKlon.querySelector(".billede").src = `imgs/${cov.gsx$billede.$t}` + ".jpg";
 
             minKlon.querySelector("article").addEventListener("click", () => visDetaljer(cov));
