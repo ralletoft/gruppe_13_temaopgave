@@ -10,9 +10,9 @@ img {
 
 header {
     display: flex;
-    /* justify-content: center;*/
 }
 
+/*Herunder kommer vores mere individuelle css koder, på diverse headers, p tags osv.*/
 
 h1 {
     display: flex;
@@ -66,7 +66,6 @@ p {
 
 .item-c {
     grid-area: main;
-    /* background-color: #F2EDDC;*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px;
@@ -86,6 +85,8 @@ article {
 .valgt {
     text-decoration: underline;
 }
+
+/*Herunder er vores kode på vores pop-up vindue. Billeder og tekst syntes vi skulle se en smule anderledes ud i disse*/
 
 #popup {
     z-index: 1;
@@ -167,6 +168,8 @@ button {
     display: inline-block;
     margin-left: 1.3em;
 }
+
+/*Herunder kommer eneste media query, som er lavet ud fra mobile first*/
 
 @media screen and (min-width:768px) {
     .menuknap {
