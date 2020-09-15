@@ -50,9 +50,14 @@ function visDetaljer(cov) {
     popup.querySelector(".pop_beskrivelse").textContent = cov.gsx$beskrivelse.$t;
     popup.querySelector(".pop_albumnavn").textContent = cov.gsx$albumnavn.$t;
     popup.querySelector(".pop_billede").src = `imgs/${cov.gsx$billede.$t}` + ".jpg";
+
+    document.querySelector("body").style.overflow = "hidden";
 }
 
-document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
+document.querySelector("#luk").addEventListener("click", () => {
+    popup.style.display = "none";
+    document.querySelector("body").style.overflow = "visible";
+});
 
 function addEventListenersToButtons() {
     document.querySelector(".menuknap").addEventListener("click", toggleMenu);

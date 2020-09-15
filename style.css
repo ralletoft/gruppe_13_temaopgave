@@ -118,8 +118,9 @@ article {
 }
 
 .pop_billede {
-    width: 60%;
+    width: 100%;
 }
+
 
 #luk {
     position: absolute;
@@ -141,6 +142,7 @@ button {
     border: none;
     list-style-type: none;
     background: none;
+    text-align: left;
 }
 
 *:focus {
@@ -152,6 +154,7 @@ button {
     display: flex;
     list-style-type: none;
     flex-direction: column;
+    padding-left: 15px;
 }
 
 .hidden {
@@ -189,5 +192,9 @@ button {
 
     header {
         justify-content: center;
+    }
+
+    .pop_billede {
+        width: 60%;
     }
 }
