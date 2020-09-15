@@ -35,7 +35,6 @@ p {
 }
 
 .container {
-    height: 100vh;
     display: grid;
     grid-template-areas:
         "header header header header"
@@ -71,11 +70,6 @@ p {
     grid-gap: 50px;
     margin: 20px;
 
-}
-
-.item-d {
-    grid-area: footer;
-    background-color: beige;
 }
 
 article {
