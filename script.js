@@ -9,6 +9,7 @@ async function loadJSON() {
     covers = await JSONData.json();
     addEventListenersToButtons();
     visCovers();
+
 }
 
 function visCovers() {
@@ -54,10 +55,27 @@ function visDetaljer(cov) {
 document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
 
 function addEventListenersToButtons() {
+    document.querySelector(".menuknap").addEventListener("click", toggleMenu);
     document.querySelectorAll(".filter").forEach((btn) => {
         btn.addEventListener("click", filterBTNs);
     })
 }
+
+function toggleMenu() {
+    console.log("toggleMenu");
+
+    document.querySelector(".menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector(".menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector(".menuknap").innerHTML = "<img src='burgermenu.png' alt='menu logo'>";
+
+    } else {
+        document.querySelector(".menuknap").innerHTML = "<img src='kryds.png' alt='menu x'>";
+    }
+}
+
 
 function filterBTNs() {
     filter = this.dataset.kategori;

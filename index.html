@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TOP COVERS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="musik_logo.png" sizes="16x16" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -34,11 +35,14 @@
     <header>
 
         <nav>
-            <button class="filter valgt" data-kategori="alle">ALLE</button>
-            <button class="filter" data-kategori="rock">ROCK</button>
-            <button class="filter" data-kategori="pop">POP</button>
-            <button class="filter" data-kategori="jazz">JAZZ</button>
-            <button class="filter" data-kategori="hiphop">HIP HOP</button>
+            <div class="menuknap"><img src="burgermenu.png" alt="burgermenu"></div>
+            <div class="menu hidden">
+                <button class="filter valgt" data-kategori="alle">ALLE</button>
+                <button class="filter" data-kategori="rock">ROCK</button>
+                <button class="filter" data-kategori="pop">POP</button>
+                <button class="filter" data-kategori="jazz">JAZZ</button>
+                <button class="filter" data-kategori="hiphop">HIP HOP</button>
+            </div>
         </nav>
 
     </header>
@@ -49,13 +53,15 @@
             <article>
                 <button id="luk">X</button>
                 <h2 class="pop_kunstner"></h2>
-                <img class="pop_billede" src="" alt="">
-                <div>
-                    <p class="pop_kategori"></p>
-                    <p>Udgivelse: <span class="pop_udgivelse"></span></p>
-                    <p>Pladeselskab: <span class="pop_pladeselskab"></span></p>
-                    <p><span class="pop_beskrivelse"></span></p>
-                    <p><span class="pop_albumnavn"></span></p>
+                <div class="img_tekst">
+                    <img class="pop_billede" src="" alt="">
+                    <div class="tekst">
+                        <p class="pop_kategori"></p>
+                        <p>Udgivelse: <span class="pop_udgivelse"></span></p>
+                        <p>Pladeselskab: <span class="pop_pladeselskab"></span></p>
+                        <p><span class="pop_beskrivelse"></span></p>
+                        <p><span class="pop_albumnavn"></span></p>
+                    </div>
                 </div>
 
             </article>
@@ -71,6 +77,4 @@
     </main>
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
