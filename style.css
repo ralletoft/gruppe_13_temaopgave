@@ -25,10 +25,21 @@ p {
     display: grid;
     grid-template-areas:
         "header header header header"
-        "sidebar main main main"
-        "sidebar main main main"
+        "main main main main"
+        /*"sidebar main main main"*/
         "footer footer footer footer"
 
+}
+
+.cov {
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+}
+
+.cov p {
+    margin: 0 auto;
 }
 
 .billede:hover {
@@ -37,10 +48,12 @@ p {
 
 .item {}
 
+/*
 .item-a {
     grid-area: header;
-    background-color: #262240;
+    background-color: beige;
 }
+*/
 
 .splash {
     background-image: url(tema_07_splash.png);
@@ -50,35 +63,30 @@ p {
     position: relative;
 }
 
-.splash img {
-    width: 600px;
-    height: 600px;
-    top: 10vw;
-    left: 30vw;
-}
-
+/*
 .item-b {
     grid-area: sidebar;
-    background-color: #A0D3F2;
+    background-color: beige;
 }
+*/
 
 .item-c {
     grid-area: main;
-    background-color: #F27B50;
+    background-color: beige;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 0.5em;
-    margin: 10px;
+    margin: 0;
 
 }
 
 .item-d {
     grid-area: footer;
-    background-color: #F2EDDC;
+    background-color: beige;
 }
 
 article {
-    background-color: #F2C572;
+    background-color: beige;
 }
 
 .valgt {
@@ -137,6 +145,7 @@ button {
     font-size: .8em;
     border: none;
     list-style-type: none;
+    background: none;
 }
 
 *:focus {
@@ -146,7 +155,7 @@ button {
 .billede {
     width: 250px;
     height: 250px;
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
 }
