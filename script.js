@@ -12,6 +12,8 @@ async function loadJSON() {
 
 }
 
+//sitet er nu loadet og json data er hentet fra vores google docs dokument
+
 function visCovers() {
     const templatePointer = document.querySelector("template");
     const listPointer = document.querySelector(".item-c");
@@ -23,7 +25,8 @@ function visCovers() {
             const minKlon = templatePointer.cloneNode(true).content;
             minKlon.querySelector(".billede").src = `imgs/${cov.gsx$billede.$t}` + ".jpg";
             minKlon.querySelector(".kunstner").textContent = cov.gsx$kunstner.$t;
-            minKlon.querySelector(".albumnavn").textContent = cov.gsx$albumnavn.$t; //minKlon.querySelector(".udgivelse").textContent = cov.gsx$udgivelse.$t;
+            minKlon.querySelector(".albumnavn").textContent = cov.gsx$albumnavn.$t;
+            //minKlon.querySelector(".udgivelse").textContent = cov.gsx$udgivelse.$t;
             //minKlon.querySelector(".pladeselskab").textContent = cov.gsx$pladeselskab.$t;
             //minKlon.querySelector(".").textContent = cov.gsx$lang.$t;
             //minKlon.querySelector(".kategori").textContent = cov.gsx$kategori.$t;
@@ -36,6 +39,8 @@ function visCovers() {
 
     })
 }
+
+//efter denne function er billede, kunstner navn og albumnavn hentet og vist i vores item-c. Resten har vi udkommenteret for at give en stilren forside.
 
 function visDetaljer(cov) {
     console.log(cov);
@@ -59,6 +64,9 @@ document.querySelector("#luk").addEventListener("click", () => {
     document.querySelector("body").style.overflow = "visible";
 });
 
+//ovenfor har vi hentet data ind til vores pop-up side, som er blokeret indtil de bliver trykket på senere i vores JavaScript
+//Luk knapen er også gjort klikbar
+
 function addEventListenersToButtons() {
     document.querySelector(".menuknap").addEventListener("click", toggleMenu);
     document.querySelectorAll(".filter").forEach((btn) => {
@@ -81,6 +89,8 @@ function toggleMenu() {
     }
 }
 
+//vores burger menu er nu gjort aktiv og klikbar og vha. mediaquery ses den kun i vores mobilversion af site
+
 
 function filterBTNs() {
     filter = this.dataset.kategori;
@@ -92,3 +102,5 @@ function filterBTNs() {
     visCovers();
 
 }
+
+//I vores sidste function her vises den valgte kategori i vores H1 på siden
