@@ -26,11 +26,7 @@ function visCovers() {
             minKlon.querySelector(".billede").src = `imgs/${cov.gsx$billede.$t}` + ".jpg";
             minKlon.querySelector(".kunstner").textContent = cov.gsx$kunstner.$t;
             minKlon.querySelector(".albumnavn").textContent = cov.gsx$albumnavn.$t;
-            //minKlon.querySelector(".udgivelse").textContent = cov.gsx$udgivelse.$t;
-            //minKlon.querySelector(".pladeselskab").textContent = cov.gsx$pladeselskab.$t;
-            //minKlon.querySelector(".").textContent = cov.gsx$lang.$t;
-            //minKlon.querySelector(".kategori").textContent = cov.gsx$kategori.$t;
-            //minKlon.querySelector(".beskrivelse").textContent = cov.gsx$beskrivelse.$t;
+
 
             minKlon.querySelector("article").addEventListener("click", () => visDetaljer(cov));
 
@@ -49,7 +45,6 @@ function visDetaljer(cov) {
 
     popup.querySelector(".pop_kunstner").textContent = cov.gsx$kunstner.$t
     popup.querySelector(".pop_udgivelse").textContent = cov.gsx$udgivelse.$t;
-    //popup.querySelector(".pop_").textContent = cov.gsx$kort.$t;
     popup.querySelector(".pop_pladeselskab").textContent = cov.gsx$pladeselskab.$t;
     popup.querySelector(".pop_kategori").textContent = cov.gsx$kategori.$t;
     popup.querySelector(".pop_beskrivelse").textContent = cov.gsx$beskrivelse.$t;
