@@ -78,12 +78,37 @@ p {
 
 }
 
+footer {
+    background-color: #A0D3F2;
+    padding: 5vw 0;
+    margin-top: 5vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+#footer1 {}
+
+#footer2 {}
+
+#footer3 {
+    background-image: url(musik_logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
 article {
     background-color: beige;
 }
 
 .valgt {
     text-decoration: underline;
+    color: #F27B50;
 }
 
 /*Herunder er vores kode på vores pop-up vindue. Billeder og tekst syntes vi skulle se en smule anderledes ud i disse*/
@@ -102,10 +127,10 @@ article {
 #popup article {
     width: 80vw;
     margin: 4rem auto;
-    background-color: beige;
+    background-color: #F2EDDC;
     padding: 10px;
     position: relative;
-
+    border: 10px solid #262240;
 }
 
 .tekst {
@@ -115,7 +140,7 @@ article {
 
 
 .pop_kunstner {
-    font-size: 3em;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -154,7 +179,6 @@ button {
 *:focus {
     outline: 0 !important;
 }
-
 
 .menu {
     display: flex;
@@ -242,6 +266,11 @@ button {
     }
 
     .pop_billede {
-        width: 60%;
+        width: 40%;
+    }
+
+    .pop_kunstner {
+        font-size: 3em;
+        text-transform: uppercase;
     }
 }
