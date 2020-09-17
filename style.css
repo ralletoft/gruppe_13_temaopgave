@@ -67,6 +67,7 @@ p {
     height: 58.6vw;
     position: relative;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .item-c {
@@ -201,14 +202,19 @@ button {
     .arrow_container {
         position: relative;
         bottom: -90%;
-        left: 50%;
-        margin-left: -20px;
-
+        display: inline-block;
+        margin: 0 auto;
+        /*        left: 50%;
+        */
+        /*        margin-left: -20px;
+        */
     }
 
     .arrow {
         width: 40px;
         height: 40px;
+        background-position: center;
+
 
         /**
    * Dark Arrow Down
